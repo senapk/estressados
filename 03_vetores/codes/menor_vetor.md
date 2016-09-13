@@ -1,3 +1,7 @@
+
+Exercício extra: você não precisa de um vetor pra isso. Basta ler e durante o laço de leitura, guardar o menor.
+
+```c++
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -21,7 +25,4 @@ int main(){
     cout << "O menor eh " << menor << endl;
     return 0;
 }
-
-
-
-            
+```
