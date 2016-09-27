@@ -2,6 +2,12 @@
 
 Esse repositório tem por objetivo propor vários exercícios simples de programação. A maioria dos exercícios propostos já vem com as soluções em **C99, C++11 e Python2**.
 
+<details> 
+  <summary>Q1: What is the best Language in the World? </summary>
+   A1: JavaScript 
+</details>
+
+
 ### Exercícios
 
 [Vetores](03_vetores/Readme.md)
