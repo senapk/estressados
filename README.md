@@ -2,12 +2,23 @@
 
 Esse repositório tem por objetivo propor vários exercícios simples de programação. A maioria dos exercícios propostos já vem com as soluções em **C99, C++11 e Python2**.
 
-Faça um laço que mostre os números ímpares entre 0 e 100
-<details> <summary>SPOILER</summary>
+1. Faça um laço que mostre os números ímpares entre 0 e 100. 
+
+<details><summary>C</summary>
+```c++
 for(int i = 1; i < 100; i += 2)
     cout << i << " ";
+```
 </details>
 
+<details><summary>Python</summary>
+```python
+for i in range(0, 100, 2):
+    print i + " ",
+```
+</details>
+
+Faça outro laço bla bla bla
 
 ### Exercícios
 
