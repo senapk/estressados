@@ -2,9 +2,10 @@
 
 Esse repositório tem por objetivo propor vários exercícios simples de programação. A maioria dos exercícios propostos já vem com as soluções em **C99, C++11 e Python2**.
 
-<details> 
-  <summary>Q1: What is the best Language in the World? </summary>
-   A1: JavaScript 
+Faça um laço que mostre os números ímpares entre 0 e 100
+<details> <summary>SPOILER</summary>
+for(int i = 1; i < 100; i += 2)
+    cout << i << " ";
 </details>
 
 
