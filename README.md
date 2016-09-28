@@ -1,46 +1,43 @@
-# Exercícios de Programação
+# Laço
 
-Esse repositório tem por objetivo propor vários exercícios simples de programação. A maioria dos exercícios propostos já vem com as soluções em **C99, C++11 e Python2**.
-
-1. Faça um laço que mostre os números ímpares entre 0 e 100. 
-
+1. Faça um laço que mostre os números ímpares entre 0 e 20. 
+```
+1 3 5 ... 19
+```
 <details><summary>C</summary>
 ```c++
-for(int i = 1; i < 100; i += 2)
+for(int i = 1; i < 20; i += 2)
     cout << i << " ";
 ```
 </details>
 
 <details><summary>Python</summary>
 ```python
-for i in range(0, 100, 2):
+for i in range(1, 20, 2):
     print i + " ",
 ```
 </details>
 
-Faça outro laço bla bla bla
-
-### Exercícios
-
-[Vetores](03_vetores/Readme.md)
-
-### Configurando
-Se for compilar/execurar os exercícios no seu computador descubra como adaptar sua IDE para essas versões.
-
-No linux e compilando/executando via linha de comando seria algo mais ou menos assim.
-
-```
-gcc -std=c99 prog.c -o prog
-g++ -std=c++11 prog.cpp -o prog
-python2 prog.py
-```
-
-### IDEs
-Para C e C++ o **codeblocks** é uma boa IDE.
-No **codeblocks** vá em configurações, compiladores e marque a opção para habilitar o C++11. O C99 já é default.
-
-Para python minhas duas preferidas são o **Spyder** e o **Pycharm**.
-
-### Última sugestão
-
-Tente fazer a atividade e se você tiver problemas, dê uma olhadinha no exemplo. Programar se aprende programando, os exercícios resolvidos só vão lhe ajudar se você se ajudar.
+- Imprimir de 1 a 31, de 3 em 3 
+    1, 4, 7, ..., 31
+- Imprimir de 10 até 0 
+    10, 9, 8, 7, ..., 0
+- Com dois contadores, imprima 'i' indo de 0 até 10 enquanto
+'j' vai de 10 até 0.
+    [0 10] [1 9] [2 8] ... [8 2] [9 1] [10 0]
+- Faça o exercício anterior usando apenas 'i'.
+    dica: imprima << i << " " << (10 - 1) << " "
+- Usando um laço, sorteie 5 números entre 0 e 100, imprima-os, e no final, mostre o menor.
+    20 43 15 18 91 12
+    12
+- Usando um laço apenas, sorteie 5 números e mostre ao final o menor e o maior.
+- Usando um laço apenas, sorteie 5 números e mostre a soma de todos menos o menor e o maior. 
+- Pegar números do usuários até ele digitar -1, depois mostre quantos ele digitou, a soma e a média.
+- Dado um número qualquer, imprima ao contrario.
+    >> 574839
+    << 938475
+- Dado um número e uma posição, retorne o dígito correspondente.
+    0 para unidade, 1 para dezena, 2 para centena, etc.
+    >> 3652 2
+    << 6
+    
