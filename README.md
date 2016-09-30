@@ -7,7 +7,7 @@ As atividades devem usar apenas laço. Não use vetores para nenhuma delas. Noss
 Clique no nome da linguagem para ver a resposta ou a dica[C, Python, Dica]. 
 
 Sugestão: use o google-chrome.
-
+[bita](bita.md#ufc)
 ---
 ### Faça um laço que mostre os números ímpares entre 0 e 20. 
 >`1 3 5 ... 19`
