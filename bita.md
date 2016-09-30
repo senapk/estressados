@@ -5,7 +5,7 @@
 As atividades devem usar apenas laço. Não use vetores para nenhuma delas. Nosso objetivo é aprimorar nosso domínio de laço.
 
 Clique no nome da linguagem para ver a resposta ou a dica[C, Python, Dica]. 
-
+[bita](bita.md#ufc)
 Sugestão: use o google-chrome.
 
 ---
