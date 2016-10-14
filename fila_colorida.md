@@ -94,6 +94,5 @@ Duas ou mais pessas seguidas com a mesma cor formam um time.
 
 **Circular dupla**
 - 92. Os participantes foram convidados a fazer duas filas com o mesmo tamanho.
-    - Após isso ele
-    - Quantos elementos eles deram as mãos formando filas circulares.
+    - Eles deram as mãos formando filas circulares.
     - Qual a maior sequencia encontrada na primeira fila que também existe na outra fila?
