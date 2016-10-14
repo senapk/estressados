@@ -40,30 +40,32 @@ Duas ou mais pessas seguidas com a mesma cor formam um time.
 - 41. Quantas pessoas estavam de cor 0 ou até n pessoas de distancia de alguém de cor 0?
 
 **Sequencias**
-- 51. Dada uma sequencia de cores, diga quantas vezes ela apareceu na fila.
-- 52. Uma grupo ascendente é quando temos pessoas seguidas com cores que vão esquentando. 
+- 51. **sequencia**: Dada uma sequencia de cores, diga quantas vezes ela apareceu na fila.
+- 52. **ascendente**: Um grupo ascendente é quando temos pessoas seguidas com cores que vão esquentando. 
     - O grupo [-4 -1 2 2 5] e um grupo ascendente de 6 pessoas. 
     - Mostre o maior grupo ascendente da fila. 
     - Se houver empate, mostre os grupos vencedores.
-- 53. O calor total de um grupo se dá pela soma dos números dos participantes. 
+- 53. **calor_total**: O calor total de um grupo se dá pela soma dos números dos participantes. 
     - O grupo [-2 1 3 -4 5 -1] tem calor total 2. 
     - Analise os elementos da fila de 4 em 4 e mostre qual grupo mais quente da fila. 
     - Se houver empate, mostre todos os grupos vencedores.
     - Desafio: encontre o grupo de maior calor da sala independente do número de participantes.
-- 54. Homogêneo é um grupo onde de um participante pro outro muda no máximo 2 tons. 
+- 54. **homogeneo**: Homogêneo é um grupo onde de um participante pro outro muda no máximo 2 tons. 
     - Qual o maior grupo homogêneo? 
     - Se houver empate, mostre todos os grupos vencedores.
-- 55. Casais são formados quando quando uma pessoa de uma cor encontra o seu oposto. 
+
+**Grupos**
+- 60. **casais**: Casais são formados quando quando uma pessoa de uma cor encontra o seu oposto. 
     - O 3 e o -3 formam um casal.
     - O 0 forma casa com outro 0.
     - Os participantes fossem orientados a sair da fila e procurar seu par.
     - Quantos casais poderiam ser formados?
-- 56. Pedimos pros participantes se organizassem em trios. 
+- 61. Pedimos pros participantes se organizassem em trios. 
     - Todos os 3 deveriam estar com a mesma cor. 
     - Quantos trios foram formados?
 
 **Mata mata**
-- 70. Dado um cor X, como fica a fila após remover X?
+- 70. Dado uma cor X, como fica a fila após remover X?
 - 71. O coordenador disse: se você está do lado de alguém da mesma
     cor que você, saia da fila com ele.
     - Quando os pares saiam, as vezes se formavam novos pares que também saíam.
