@@ -9,6 +9,7 @@
 - Dois números iguais significam duas cores iguais. 
 - As cores vão gradativamente da mais fria até a mais quente.
 - Uma camera sobre o saguao do evento coletou as cores da fila e enviou para um computador que vai processar e responder as seguintes perguntas.
+
 ---
 
 **Busca**
