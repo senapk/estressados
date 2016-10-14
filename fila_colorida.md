@@ -13,16 +13,16 @@
 ---
 
 **Busca**
-- 00. Dada a cor X, a cor X apareceu na fila?
-- 01. Quantas vezes a cor X apareceu na fila?
-- 02. Em que posições da fila apareceu a cor X?
+- 00. **exist**: Dada a cor X, a cor X apareceu na fila?
+- 01. **count**: Quantas vezes a cor X apareceu na fila?
+- 02. **find**: Em que posições da fila apareceu a cor X?
 
 **Contagem**
-- 10. Quantas cores diferentes apareceram na fila?
-- 11. Quais cores apareceram na fila?
-- 12. Quantas pessoas eram a única representate da sua cor na fila?
-- 13. Qual cor apareceu mais vezes na fila e quantas vezes ela apareceu? Se houver empate, mostre todas as vencedoras.
-- 14. Quantas cores apareceram mais de 3 vezes no total?
+- 10. **diferentes**: Quantas cores diferentes apareceram na fila?
+- 11. **exemplares**: Quais cores apareceram na fila?
+- 12. **sozinhas**: Quantas pessoas eram a única representate da sua cor na fila?
+- 13. **repetida**: Qual cor apareceu mais vezes na fila e quantas vezes ela apareceu? Se houver empate, mostre todas as vencedoras.
+- 14. **mais-de-3**: Quantas cores apareceram mais de 3 vezes no total?
 
 **Frio ou Quente**
 - 20. Cores menores que 0 são cores frias e as maiores que 0 são cores quentes. Quem apareceu mais, frias ou quentes?
