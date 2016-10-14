@@ -15,12 +15,12 @@
 **Busca**
 - 00. Dada a cor X, a cor X apareceu na fila?
 - 01. Quantas vezes a cor X apareceu na fila?
-- 02.Em que posições da fila apareceu a cor X?
+- 02. Em que posições da fila apareceu a cor X?
 
 **Contagem**
 - 10. Quantas cores diferentes apareceram na fila?
 - 11. Quais cores apareceram na fila?
-- 12. Quantas pessoas estavam sozinhas com aquela cor na fila?
+- 12. Quantas pessoas eram a única representate da sua cor na fila?
 - 13. Qual cor apareceu mais vezes na fila e quantas vezes ela apareceu? Se houver empate, mostre todas as vencedoras.
 - 14. Quantas cores apareceram mais de 3 vezes no total?
 
@@ -28,7 +28,8 @@
 - 20. Cores menores que 0 são cores frias e as maiores que 0 são cores quentes. Quem apareceu mais, frias ou quentes?
 
 **Times**
-Duas ou mais pessas seguidas com a mesma cor formam um time.]os ]os]
+
+Duas ou mais pessas seguidas com a mesma cor formam um time.
 - 31. Quantos times existem na fila?
 - 32. Qual o maior time que apareceu na fila?
 - 33. Quantos times tinham 5 ou mais pessoas?
@@ -48,9 +49,10 @@ Duas ou mais pessas seguidas com a mesma cor formam um time.]os ]os]
     - O grupo [-2 1 3 -4 5 -1] tem calor total 2. 
     - Analise os elementos da fila de 4 em 4 e mostre qual grupo mais quente da fila. 
     - Se houver empate, mostre todos os grupos vencedores.
+    - Desafio: encontre o grupo de maior calor da sala independente do número de participantes.
 - 54. Homogêneo é um grupo onde de um participante pro outro muda no máximo 2 tons. 
     - Qual o maior grupo homogêneo? 
-    - Se houver empate, todos os grupos vencedores.
+    - Se houver empate, mostre todos os grupos vencedores.
 - 55. Casais são formados quando quando uma pessoa de uma cor encontra o seu oposto. 
     - O 3 e o -3 formam um casal.
     - O 0 forma casa com outro 0.
