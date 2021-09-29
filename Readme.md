@@ -8,7 +8,7 @@
 
 - Na entrada de um evento de um experimento social, os participantes ganhavam uma pulseira especial que precisavam ficar utilizando.
 - A pulseira informava, num pequeno visor, um número inteiro que representava o nível de stress daquele participante.
-- Nenhum participante sabia o que aquele n´úmero significava.
+- Nenhum participante sabia o que aquele número significava.
 - O número 1 significava totalmente tranquilo e ia aumentando conforme o stress do participante aumentava a´té o valor máximo de 99.
 - Para fazer uma representação lógica, os números positivos representam homens e os números negativos representam mulheres em um vetor de inteiros.
 - Precisamos escrever os algorítmos que identifiquem informações importantes sobre os participantes da fila.
