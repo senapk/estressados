@@ -43,18 +43,64 @@
 
 #### **Filter - Operações de Filtragem**
 - Retornando vetores dentro de uma função em C, C++, Javascript, Python
-- **clonar**
-- **filtrar_por_criterio**
-    - **pegar_homens**: retorne uma lista com os homens (valores positivos)
-    - **pegar_calmos**: retorne uma lista com as pessoas com stress menor que 10 (positivos menor que 10) (abs)
-    - **pegar_mulheres_calmas**: retorne uma lista com as mulheres com nível de stress menor que 10.(negativos menor que 10)
+- **clonar**: retorna um novo vetor copiando os valores do vetor de entrada
+```cpp
+vector<int> clone(const vector<int>& v);
+```
+
+- **pegar_homens**: retorne uma lista com os homens (valores positivos)
+
+```cpp
+vector<int> pegar_homens(const vector<int>& v);
+```
+
+- **pegar_calmos**: retorne uma lista com as pessoas com stress menor que 10 (positivos menor que 10) (abs)
+
+```cpp
+vector<int> pegar_calmos(const vector<int>& v);
+```
+
+
+- **pegar_mulheres_calmas**: retorne uma lista com as mulheres com nível de stress menor que 10.(negativos menor que 10)
+
+```cpp
+vector<int> pegar_mulheres_calmas(const vector<int>& v);
+```
+
+
 
 #### **Acesso**
 - **inverter_com_copia**
+```cpp
+//retorna um novo vetor com os dados invertidos
+vector<int> inverter_com_copia(const vector<int>& v);
+```
+
 - **reverter_inplace**
+```cpp
+//inverte os valores do vetor de entrada sem uso de vetor auxiliar
+void inverter_inplace(vector<int>& v);
+```
+
 - **sortear**
+```cpp
+//retorna aleatoriamente um elemento do vetor
+int sortear(const vector<int>& v);
+```
+
 - **embaralhar**
-- **ordenar** - selection sort utilizando procurar_menor_pos_apos
+```cpp
+//embaralha o vetor original
+void embaralhar(vector<int>& v);
+```
+
+
+- **ordenar** - selection sort utilizando 
+```cpp
+//ordena o vetor original
+void ordenar(vector<int>& v);
+```
+
 
 #### **Conjuntos**
 - **exclusivos**: O fiscal permitiu a entrada de um único representante de cada valor, ou seja, uma lista dos valores que aparecem na fila sem repetição. Que conjunto foi formado?
