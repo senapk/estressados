@@ -14,31 +14,96 @@
 - Precisamos escrever os algorítmos que identifiquem informações importantes sobre os participantes da fila.
 
 **Exemplos:** 
-- `[]` equivale a uma fila vazia.
-- `[-1, -50, -99]` equivale a uma mulher totalmente tranquila, uma mulher médio estressada e uma mulher extremamente estressada.
-- `[80, 70, 90, -4]` equivale a três homens estressados e uma mulher tranquila. 
+- `{]` equivale a uma fila vazia.
+- `{-1, -50, -99}` equivale a uma mulher totalmente tranquila, uma mulher médio estressada e uma mulher extremamente estressada.
+- `{80, 70, 90, -4}` equivale a três homens estressados e uma mulher tranquila. 
 ---
 
 ### Exercícios
 
 #### **Busca**
 - **existe**: Alguém com o valor X está na fila?
+```cpp
+bool existe(vector<int> fila, int x);
+
+existe({-1, -50, -99}, -1); // true
+existe({-1, -50, -99}, 10); // false
+```
+
 - **contar**: Quantas vezes o valor X apareceu na fila?
+
+```cpp
+int contar(vector<int> fila, int x);
+
+contar({-1, -50, -1 -99}, -1); // 2
+contar({-1, -50, -1, -99}, 10); // 0
+```
+
 - **procurar_valor**: Em que posição da fila aparece X pela primeira vez?
+```cpp
+//retorna -1 se não encontrar
+int procurar_valor(vector<int> fila, int x);
+
+procurar_valor({-1, -50, -1 -99}, -50); // 1
+procurar_valor({-1, -50, -1, -99}, 10); // -1
+```
 - **procurar_valor_apos**: Dada a posição para iniciar a busca, qual a próxima posição em que aparece X?
+```cpp
+//retorna -1 se não encontrar
+int procurar_valor(vector<int> fila, int x, int inicio);
+
+procurar_valor({5, 3, -1, -50, -1, -99}, -1, 0); // 2
+procurar_valor({5, 3, -1, -50, -1, -99}, -1, 3); // 4
+procurar_valor({5, 3, -1, -50, -1, -99}, -1, 4); // -1
+```
 
 #### **Melhor caso**
 - **procurar_menor**: qual o menor valor da lista?
-    - **procurar_maior**: qual o maior valor da lista?
+```cpp
+int procurar_menor(vector<int> fila);
+
+procurar_menor({5, 3, -1, -50, -1, -99}); // -99
+```
 - **procurar_menor_pos**: qual a posição do menor valor da lista?
-    - **procurar_menor_pos_apos**: qual a posição do menor valor da lista depois da posição P?
+```cpp
+int procurar_menor_pos(vector<int> fila);
+
+procurar_menor_pos({5, 3, -1, -50, -1, -99}); // 5
+```
 - **procurar_melhor_se**: qual a posição do HOMEM mais calmo? (menor valor maior que 0)
+```cpp
+//retorna -1 se não encontrar
+int procurar_menor_pos_se(vector<int> fila);
+
+procurar_menor_pos_se({5, 3, -1, -50, -1, -99}); // 3
+procurar_menor_pos_se({-1, -50, -1, -99}); // -1
+```
 
 
 #### **Contagem**
 - **calcular_stress_medio**: qual a média de stress da fila? (abs)
+```cpp
+float calcular_stress_medio(vector<int> fila);
+```
 - **mais_homens_ou_mulheres**: Na fila existem mais homens ou mulheres?
+```cpp
+//retorna "homens", "mulheres" ou "empate"
+string mais_homens_ou_mulheres(vector<int> fila);
+
+mais_homens_ou_mulheres({5, 3, -1, -50, -1, -99}); // "mulheres"
+mais_homens_ou_mulheres({5, 3, 1, -50, -1, -99}); // "empate"
+mais_homens_ou_mulheres({5, 3, 1, -50, -1, 99}); // "homens"
+```
 - **qual_metade_eh_mais_estressada**: O nível de stress somado de todas as pessoas da primeira metade é maior que o nível de stress somado das pessoas da segunda metade da fila? (abs)
+```cpp
+//retorna "primeira", "segunda" ou "empate"
+string mais_homens_ou_mulheres(vector<int> fila);
+
+mais_homens_ou_mulheres({5, 3, -1, -50, -1, -99}); // "segunda"
+mais_homens_ou_mulheres({50, 98, 2, -50, -1, -99}); // "empate"
+mais_homens_ou_mulheres({-51, 99, 1, -50, -1, -99}); // "primeira"
+```
+
 - **homens_sao_mais_estressados_que_mulheres**: a média do stress dos homens é maior que a das mulheres? 
 
 #### **Filter - Operações de Filtragem**
@@ -104,20 +169,20 @@ void ordenar(vector<int>& v);
 
 #### **Conjuntos**
 - **exclusivos**: O fiscal permitiu a entrada de um único representante de cada valor, ou seja, uma lista dos valores que aparecem na fila sem repetição. Que conjunto foi formado?
-    - ```[1, 3, 4, 3, -1, -2, -2] -> [1, 3, 4, -1, -3]```
+    - ```{1, 3, 4, 3, -1, -2, -2} -> {1, 3, 4, -1, -3}```
     - **diferentes**: Qual a lista dos diferentes níveis de stress que aparecem?
-        - ```[1, 3, 4, 3, -1, -2, -2] -> [1, 3, 4]```
+        - ```{1, 3, 4, 3, -1, -2, -2} -> {1, 3, 4}```
 
 - **abandonados**: quais pessoas ficaram na fila após remover um exemplar de cada valor?
-    - ```[1, 3, 4, 3, -1, -2, -2] -> [3, -2]```
+    - ```{1, 3, 4, 3, -1, -2, -2} -> {3, -2}```
 
 #### **Map - Manipulação** -> map, zip, filter
 - **sozinhos**: Quais PESSOAS eram as únicas representantes do seu nível de stress na fila? (abs)
-    - ```[1, 3, 4, 3, -1, -3, -3] -> [4]```
+    - ```{1, 3, 4, 3, -1, -3, -3} -> {4}```
 - **mais_ocorrencias**: Qual a maior quantidade de ocorrências do mesmo nível de stress. (abs)
-    - ```[1, 3, 4, 5, -1, -5, -5] -> 3```
+    - ```{1, 3, 4, 5, -1, -5, -5} -> 3```
 - **mais_recorrentes**: Quais os níveis de stress mais recorrentes. (abs)
-    - ```[1, 3, 4, 5, -1, -5, -5, 3, -3] -> [5, 3]```
+    - ```{1, 3, 4, 5, -1, -5, -5, 3, -3} -> {5, 3}```
 
 #### **Proximidade**
 - **briga** Quando alguém super estressado(>50) está ao lado de duas pessoas muito estressadas(>30) pode dar briga. Quantas vezes essa situação acontece?
