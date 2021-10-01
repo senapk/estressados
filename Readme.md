@@ -81,7 +81,7 @@ procurar_menor_pos_apos({5, 3, -1, -50, -1, 10}, 3); // 3
 //retorna -1 se não encontrar
 int procurar_melhor_pos_se(vector<int> fila);
 
-procurar_melhor_pos_se({5, 3, -1, -50, -1, -99}); // 3
+procurar_melhor_pos_se({5, 3, -1, -50, -1, -99}); // 1
 procurar_melhor_pos_se({-1, -50, -1, -99}); // -1
 ```
 
