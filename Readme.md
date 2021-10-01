@@ -79,10 +79,10 @@ procurar_menor_pos_apos({5, 3, -1, -50, -1, 10}, 3); // 3
 - **procurar_melhor_se**: qual a posição do HOMEM mais calmo? (menor valor maior que 0)
 ```cpp
 //retorna -1 se não encontrar
-int procurar_menor_pos_se(vector<int> fila);
+int procurar_melhor_pos_se(vector<int> fila);
 
-procurar_menor_pos_se({5, 3, -1, -50, -1, -99}); // 3
-procurar_menor_pos_se({-1, -50, -1, -99}); // -1
+procurar_melhor_pos_se({5, 3, -1, -50, -1, -99}); // 3
+procurar_melhor_pos_se({-1, -50, -1, -99}); // -1
 ```
 
 
