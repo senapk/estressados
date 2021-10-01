@@ -70,6 +70,12 @@ int procurar_menor_pos(vector<int> fila);
 
 procurar_menor_pos({5, 3, -1, -50, -1, -99}); // 5
 ```
+- **procurar_menor_pos_apos**: Dada a posição para iniciar a busca, qual a posição do menor valor da lista?
+```cpp
+int procurar_menor_pos_apos(vector<int> fila, int inicio);
+
+procurar_menor_pos_apos({5, 3, -1, -50, -1, 10}, 3); // -1
+```
 - **procurar_melhor_se**: qual a posição do HOMEM mais calmo? (menor valor maior que 0)
 ```cpp
 //retorna -1 se não encontrar
