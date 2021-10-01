@@ -47,7 +47,7 @@ int procurar_valor(vector<int> fila, int x);
 procurar_valor({-1, -50, -1 -99}, -50); // 1
 procurar_valor({-1, -50, -1, -99}, 10); // -1
 ```
-- **procurar_valor_apos**: Dada a posição para iniciar a busca, qual a próxima posição em que aparece X?
+- **procurar_valor_apartir**: Dada a posição para iniciar a busca, qual a próxima posição em que aparece X?
 ```cpp
 //retorna -1 se não encontrar
 int procurar_valor(vector<int> fila, int x, int inicio);
@@ -70,7 +70,7 @@ int procurar_menor_pos(vector<int> fila);
 
 procurar_menor_pos({5, 3, -1, -50, -1, -99}); // 5
 ```
-- **procurar_menor_pos_apos**: Dada a posição para iniciar a busca, qual a posição do menor valor da lista?
+- **procurar_menor_pos_apartir**: Dada a posição para iniciar a busca, qual a posição do menor valor da lista?
 ```cpp
 int procurar_menor_pos_apos(vector<int> fila, int inicio);
 
