@@ -200,7 +200,7 @@ vector<int> exclusivos(const vector<int>& v);
 
 - **diferentes**: Qual a lista dos diferentes níveis de stress que aparecem?
 ```cpp
-//{1, 3, 4, 3, -1, -2, -2} -> {1, 3, 4}
+//{1, 3, 4, 3, -1, -2, -2} -> {1, 3, 4, 2}
 vector<int> diferentes(const vector<int>& v);
 ```
 
