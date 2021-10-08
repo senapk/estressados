@@ -148,7 +148,7 @@ vector<int> clone(const vector<int>& v);
 vector<int> pegar_homens(const vector<int>& v);
 ```
 
-- **pegar_calmos**: retorne uma lista com as pessoas com stress menor que 10 (positivos menor que 10) (abs)
+- **pegar_calmos**: retorne uma lista com as pessoas com stress menor que 10 (abs)
 
 ```cpp
 vector<int> pegar_calmos(const vector<int>& v);
