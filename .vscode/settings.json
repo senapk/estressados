@@ -65,5 +65,20 @@
         "typeinfo": "cpp",
         "valarray": "cpp",
         "variant": "cpp"
-    }
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "__pycache__": true,
+        ".idea": true,
+        "*.out": true,
+        ".vscode": true,
+        "venv": true,
+        "respostas/*.out": true
+    },
+    "explorerExclude.backup": null
 }
