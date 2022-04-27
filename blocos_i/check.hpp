@@ -12,11 +12,14 @@ std::string to_string(T value) {
 }
 
 template <typename T, typename K>
-void compare(const T& A, const K& B) {
-    if (to_string(A) == to_string(B))
-        std::cout << "\tok\n";
-    else
-        std::cout << '\t' << A << " != " << B << "\n";
+void check(const T& A, const K& B) {
+    if (to_string(A) == to_string(B)) {
+        std::cout << " ✓";
+    } else {
+        std::cout << " ✗";
+        std::cout << '\n' << A << " != " << B << "\n";
+        exit(1);
+    }
 }
 
 template <class T>
