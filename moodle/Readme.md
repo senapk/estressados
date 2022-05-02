@@ -12,9 +12,9 @@
 - Precisamos escrever os algorítmos que identifiquem informações importantes sobre os participantes da fila.
 
 **Exemplos:** 
-- `{}` equivale a uma fila vazia.
-- `{-1, -50, -99}` equivale a uma mulher totalmente tranquila, uma mulher médio estressada e uma mulher extremamente estressada.
-- `{80, 70, 90, -4}` equivale a três homens estressados e uma mulher tranquila. 
+- `[]]` equivale a uma fila vazia.
+- `[-1, -50, -99]` equivale a uma mulher totalmente tranquila, uma mulher médio estressada e uma mulher extremamente estressada.
+- `[80, 70, 90, -4]` equivale a três homens estressados e uma mulher tranquila. 
 ---
 
 <!--TOC_BEGIN-->
@@ -22,19 +22,21 @@
 - [Fila dos estressados](#fila-dos-estressados)
 - [Exercícios](#exercícios)
 - [BLOCO I](#bloco-i)
-    - [**Busca**: 4 funções](#busca-4-funções)
-    - [**Melhor caso**: 4 funções](#melhor-caso-4-funções)
-    - [**Contagem**: 4 funções](#contagem-4-funções)
+    - [find](#find)
+    - [condicional](#condicional)
+    - [contagem](#contagem)
+    - [parcial](#parcial)
 - [BLOCO II](#bloco-ii)
-    - [**Filter - Operações de Filtragem**: 4 funções](#filter---operações-de-filtragem-4-funções)
-    - [**Acesso**: 5 funções](#acesso-5-funções)
-    - [**Conjuntos**: 3 funções](#conjuntos-3-funções)
+    - [filter](#filter)
+    - [sort](#sort)
+    - [reverse](#reverse)
+    - [set](#set)
+    - [map](#map)
 - [BLOCO III](#bloco-iii)
-    - [**Map - Manipulação**: 3 funções](#map---manipulação-3-funções)
-    - [**Proximidade**: 2 funções](#proximidade-2-funções)
-    - [**Sequências**: 3 funções](#sequências-3-funções)
-    - [**Grupos**: 2 funções](#grupos-2-funções)
-    - [**Alteração**: 3 funções](#alteração-3-funções)
+    - [proximidade](#proximidade)
+    - [sequências](#sequências)
+    - [alteração](#alteração)
+    - [rand](#rand)
 <!--TOC_END-->
 
 
@@ -47,13 +49,17 @@ Para todas as funções de busca por posição, caso não encontre elemento que 
 ### find
 - **in**: existe determinado valor na fila?
 - **index_of**: qual posição aparece X na fila pela primeira vez?
+
+### condicional
 - **find_if**: qual a posição do primeiro homem da fila?
 - **min_element**: qual a posição do menor valor da lista?
 - **find_min_if**: qual a posição do homem mais calmo?
 
-### count
+### contagem
 - **count**: quantas vezes o valor X apareceu na fila?
 - **average**: qual a média de stress?
+
+### parcial
 - **half_compares**: qual metade da lista é mais estressada? [draw, first, second]
 - **more_men_or_women**: existem mais homens ou mulheres? [draw, men, women]
 - **sex_battle**: quem é mais estressado em média? [draw, men, women]
@@ -76,10 +82,10 @@ Para todas as funções de busca por posição, caso não encontre elemento que 
 - **unicos**: retorne uma lista sem repetição de valores
 - **repetidos**: retorne uma lista apenas com os valores repetidos
 
-## Bloco III
-
 ### map
 - **ocorrencias**: Faça um mapeamento de quantas vezes cada nível de stress aparece.
+
+## BLOCO III
 
 ### proximidade
 - **acompanhados**: quais posições existem homens ao lado de pelo menos uma mulher?
@@ -93,19 +99,7 @@ Para todas as funções de busca por posição, caso não encontre elemento que 
 - **remover_todos**: dado a lista com os índices de todas as pessoas que saíram da fila, qual a fila resultante?
 - **dance**: O coordenador disse: se você está do lado de alguém da com o mesmo nível de stress que você, saia da fila com ele. Quando os pares saiam, as vezes, novos pares se formavam, e estes também saíam. Quem ficou na fila?
 
-
-
-
-## Extra
-- **sortear**
-```cpp
-//retorna aleatoriamente um elemento do vetor
-int sortear(const std::vector<int>& v);
-```
-
-- **embaralhar**
-```cpp
-//embaralha o vetor original
-void embaralhar(std::vector<int>& v);
-```
+### rand
+- **sortear**: retorna aleatoriamente um elemento do vetor 
+- **embaralhar**: retorna um vetor embaralhado
 

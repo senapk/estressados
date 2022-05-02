@@ -1,15 +1,32 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
-#include <list>
-#include "check.hpp"
-#include "one.hpp"
+#include "lib.hpp"
+#include "student.hpp"
 
-void open(std::string name) {
-    std::cout << "\n" << name;
+int main(){
+    while(true) {
+        std::string line{}, cmd{};
+        std::getline(std::cin, line);
+        std::stringstream ss(line);
+        ss >> cmd;
+        if (cmd == "end") {
+            break;
+        } else if (cmd == "in") {
+            auto [vet, value] = parse<std::vector<int>, int>(ss);
+            std::cout << fmt(in(vet, value)) << '\n';
+        } else if (cmd == "index_of") {
+            auto [vet, value] = parse<std::vector<int>, int>(ss);
+            std::cout << index_of(vet, value) << '\n';
+        } else if (cmd == "find_if") {
+            auto [vet] = parse<std::vector<int>>(ss);
+            std::cout << find_if(vet) << '\n';
+        }
+    }
+    return 0;
 }
 
-int main() {
+// int main() {
 
     // open("in");
     // check(in({-1, -50, -99}, -1), true);
@@ -66,6 +83,5 @@ int main() {
     // check(sex_battle({50, 98, 2, -50, -1, 9991}), "men");
     // check(sex_battle({-50, 99, 1, 50, -1, -99}), "draw");
 
-    // std::cout << "\n";
-    
-}
+//     std::cout << "\n";
+// }
